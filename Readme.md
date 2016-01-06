@@ -35,8 +35,7 @@ function hello_c(n::Int)
     # natively.
     val = convert(Int64, val)
     
-    # Likewise we specify that the buffer should be treated as a string of 
-    # bytes.
+    # Likewise we specify that the buffer should be treated as an ascii string.
     string = bytestring(pointer(buffer))
 
     val, string
