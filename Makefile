@@ -7,7 +7,7 @@ rosetta.dylib: rosetta.o
 rosetta.so: rosetta.o
 	gcc -shared -o rosetta.so rosetta.o
 
-build: rosetta.dylib
+build: rosetta.so
 
 clean:
 	-rm *.o
